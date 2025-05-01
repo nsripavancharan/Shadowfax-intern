@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sneaker Store</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us!</p>
+        
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..." rows="6" required></textarea>
+
+            <button type="submit" onclick="submitForm(event)">Send Message</button>
+
+        </form>
+    </div>
+</body>
+<script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevent page reload
+  
+      // You can fetch form data if needed:
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+  
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+  
+      // You can send the data via API or just show a success message
+      alert("Thank you for your message, " + name + "! We'll get back to you soon.");
+  
+      // Optionally, reset the form
+      document.querySelector('.contact-form').reset();
+    }
+  </script>
+  
+</html>

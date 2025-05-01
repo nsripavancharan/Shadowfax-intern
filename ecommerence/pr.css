@@ -1,0 +1,87 @@
+/* General Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Store Heading */
+.store h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout for Products */
+.shoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Image Styling */
+.image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Product Details */
+.details {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description {
+    flex: 1;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.description p {
+    margin-bottom: 6px;
+}
+
+.description b p {
+    color: #000;
+}
+
+/* Cart Icon */
+.cart img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cart img:hover {
+    transform: scale(1.1);
+}
