@@ -1,0 +1,42 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background: #fffde7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+  }
+  
+  header {
+    background: #f9a825;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  section {
+    border:2px solid black;
+    border-radius: 16px;
+  }
+  nav a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+    flex:1;
+  }
+  
+  ul {
+    list-style: square;
+    padding-left: 2rem;
+  }
+  
+  footer {
+    background: #c17900;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
